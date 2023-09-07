@@ -587,7 +587,89 @@
             </li>
           </ul>
         </div>
+
+        <div>
+          <p class="text-social-media-footer">Subscribe</p>
+          <form class="form-footer">
+            <input
+              class="input-form-footer"
+              type="email"
+              name="user_email_footer"
+              placeholder="E-mail"
+            />
+            <a class="link-telegram" href=""
+              >Subscribe
+              <svg
+                class="telegram-icon"
+                width="24"
+                height="24"
+                aria-label="telegram icon"
+              >
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <!-- Бекдроп, модальне вікно -->
+
+    <div class="modal-container">
+      <p class="modal-text">Leave your contacts and we will call you back</p>
+      <form class="form-feedback" name="Call back" autocomplete="on">
+        <div>
+          <label class="label-form" for="user_name">Name</label>
+          <input
+            class="input-form"
+            id="user_name"
+            type="text"
+            name="user_name"
+          />
+        </div>
+
+        <div>
+          <label class="label-form" for="user_number">Phone</label>
+          <input
+            class="input-form"
+            id="user_number"
+            type="number"
+            name="user_number"
+          />
+        </div>
+
+        <div>
+          <label class="label-form" for="user_email">Email</label>
+          <input
+            class="input-form"
+            id="user_email"
+            type="email"
+            name="user_email"
+          />
+        </div>
+
+        <label class="label-form" for="user_comment">Comment</label>
+        <textarea
+          class="textarea-form"
+          name="user_comment"
+          id="user_comment"
+          placeholder="Text input"
+        ></textarea>
+
+        <div class="checkbox-privacy-policy">
+          <input
+            type="checkbox"
+            name="user_agree"
+            id="user_agree"
+            value="agree"
+          />
+          <label class="privacy-policy-text" id="user_agree">
+            I accept the terms and conditions of the
+            <a class="privacy-policy-link" href="">Privacy Policy</a>
+          </label>
+        </div>
+        <button class="button-send" type="submit">Send</button>
+      </form>
+    </div>
   </body>
 </html>
