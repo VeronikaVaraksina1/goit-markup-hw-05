@@ -590,15 +590,15 @@
 
         <div>
           <p class="text-social-media-footer">Subscribe</p>
-          <form class="form-footer">
+          <form class="subscribe-form-footer">
             <input
-              class="input-form-footer"
+              class="subscribe-form-footer-input"
               type="email"
               name="user_email_footer"
               placeholder="E-mail"
             />
-            <a class="link-telegram" href=""
-              >Subscribe
+            <button class="subscribe-form-footer-button-telegram" type="submit">
+              Subscribe
               <svg
                 class="telegram-icon"
                 width="24"
@@ -607,7 +607,7 @@
               >
                 <use href="./images/icons.svg#icon-telegram"></use>
               </svg>
-            </a>
+            </button>
           </form>
         </div>
       </div>
@@ -615,7 +615,7 @@
 
     <!-- Бекдроп, модальне вікно -->
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal-window">
         <button class="close-button">
           <svg
@@ -632,7 +632,7 @@
           Leave your contacts and we will call you back
         </p>
 
-        <form class="callback-form" name="Call back form" autocomplete="on">
+        <form class="callback-form" name="Call back form">
           <div class="callback-form-field-wrapper">
             <label class="callback-form-label" for="user-name">Name</label>
 
@@ -716,21 +716,30 @@
               name="user_comment"
               id="user-comment"
               placeholder="Text input"
-            >
-            </textarea>
+            ></textarea>
           </div>
 
           <div class="callback-form-privacy-checkbox">
             <input
+              class="privacy-checkbox visually-hidden"
               type="checkbox"
               name="user_privacy"
               id="user-privacy"
               value="true"
               required
             />
-            <label class="privacy-label" id="user-privacy">
-              <span></span>I accept the terms and conditions of the
-              <a class="privacy-link" href="">Privacy Policy</a>
+            <label class="callback-form-privacy-label" for="user-privacy">
+              <span class="callback-form-privacy-custom-checkbox">
+                <svg
+                  class="callback-form-custom-checkmark-icon"
+                  width="10"
+                  height="8"
+                  aria-label="checkmark icon"
+                >
+                  <use href="./images/icons.svg#icon-checkmark"></use>
+                </svg> </span
+              >I accept the terms and conditions of the
+              <a class="callback-form-privacy-link" href="">Privacy Policy</a>
             </label>
           </div>
 
