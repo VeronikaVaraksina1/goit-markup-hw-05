@@ -617,7 +617,7 @@ img {
 
 .callback-form-input {
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
   background-color: transparent;
@@ -655,7 +655,7 @@ img {
 .callback-form-textarea {
   resize: none;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
   width: 100%;
@@ -678,7 +678,7 @@ img {
 
 .callback-form-privacy-label {
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--color-lightslate);
 }
